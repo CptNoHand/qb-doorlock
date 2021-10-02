@@ -1298,4 +1298,221 @@ QB.Doors = {
 		distance = 15.0,
 		size = 2
 	},
+
+	 --Paleto Front Door
+	{
+		textCoords = vector3(-443.49, 6016.31, 31.71),
+		authorizedJobs = { 'police' },
+		locking = false,
+		locked = false,
+		pickable = false,
+		distance = 2.5,
+		doors = {
+			{
+				objName = 'v_ilev_shrf2door',
+				objYaw = 135.0,
+				objCoords = vector3(-444.04, 6016.67, 31.72)
+			},
+
+			{
+				objName = 'v_ilev_shrf2door',
+				objYaw = -45.0,
+				objCoords = vector3(-443.14, 6015.78, 31.72)
+			}
+		}
+	},
+	-- Paleto Amory
+	{
+		objName = 'v_ilev_fingate',
+		objYaw = -45.0,
+		objCoords  = vector3(-437.1, 5992.19, 31.72),												
+		textCoords = vector3(-437.1, 5992.19, 31.72),
+		authorizedJobs = { 'police' },
+		locking = false,
+		locked = true,
+		pickable = false,
+		distance = 2.0,
+	},
+	-- Paleto A-Kammer
+	{
+		objName = 'prop_fnclink_03gate5',
+		objYaw = -45.0,
+		objCoords  = vector3(-440.85, 5989.68, 31.72),												
+		textCoords = vector3(-440.85, 5989.68, 31.72),
+		authorizedJobs = { 'police' },
+		locking = false,
+		locked = true,
+		pickable = false,
+		distance = 2.0,
+	},
+	-- Paleto Cell A
+	{
+		objName = 'v_ilev_ph_cellgate',
+		objYaw = -45.0,
+		objCoords  = vector3(-431.74, 6000.12, 31.72),												
+		textCoords = vector3(-431.74, 6000.12, 31.72),
+		authorizedJobs = { 'police' },
+		locking = false,
+		locked = false,
+		pickable = false,
+		distance = 2.0,
+	},
+	-- Paleto Cell B
+	{
+		objName = 'v_ilev_ph_cellgate',
+		objYaw = -45.0,
+		objCoords  = vector3(-428.64, 5997.07, 31.72),												
+		textCoords = vector3(-428.64, 5997.07, 31.72),
+		authorizedJobs = { 'police' },
+		locking = false,
+		locked = false,
+		pickable = false,
+		distance = 2.0,
+	},
+	{
+		objName = 'v_ilev_ph_cellgate',
+		objYaw = -45.0,
+		objCoords  = vector3(-432.8, 5992.57, 31.72),												
+		textCoords = vector3(-432.8, 5992.57, 31.72),
+		authorizedJobs = { 'police' },
+		locking = false,
+		locked = true,
+		pickable = false,
+		distance = 2.0,
+	},
+	--LSPD LS Side Entrance
+	{
+		textCoords = vector3(445.97, -999.2, 30.72),
+		authorizedJobs = { 'police' },
+		locking = false,
+		locked = true,
+		pickable = false,
+		distance = 2.5,
+		doors = {
+			{
+				objName = 'v_ilev_gtdoor',
+				objYaw = 0.0,
+				objCoords = vector3(445.39, -999.1, 30.72)
+			},
+
+			{
+				objName = 'v_ilev_gtdoor',
+				objYaw = -180.0,
+				objCoords = vector3(446.55, -999.07, 30.72)
+			}
+		}
+	},
+    -- Bureau Paleto Bay
+	{
+		textCoords = vector3(-435.57, 6008.76, 27.98),
+		authorizedJobs = { 'police' },
+		locking = false,
+		locked = true,
+		pickable = false,
+		distance = 2.5,
+		doors = {
+			{
+				objName = 'v_ilev_ph_gendoor002',
+				objYaw = -135.0,
+				objCoords = vector3(-436.5157, 6007.844, 28.13839),			
+			},
+			{
+				objName = 'v_ilev_ph_gendoor002',
+				objYaw = 45.0,
+				objCoords = vector3(-434.6776, 6009.681, 28.13839)			
+			}
+		}
+	},
+	-- Back door left
+	{
+		objName = 'v_ilev_gc_door01',
+		objYaw = -45.0,
+		objCoords  = vector3(-450.9664, 6006.086, 31.99004),		
+		textCoords = vector3(-451.38, 6006.55, 31.84),
+		authorizedJobs = { 'police' },
+		locking = false,
+		locked = true,
+		pickable = false,
+		distance = 2.0,
+	},
+	-- Back door right
+	{
+		objName = 'v_ilev_gc_door01',
+		objYaw = -225.0,
+		objCoords  = vector3(-447.2363, 6002.317, 31.84003),		
+		textCoords = vector3(-446.77, 6001.84, 31.68),
+		authorizedJobs = { 'police' },
+		locking = false,
+		locked = true,
+		pickable = false,
+		distance = 2.0,
+	},
+	-- Talk Room Backdoor
+	{
+		objName = 'v_ilev_rc_door2',
+		objYaw = 135.0,
+		objCoords  = vector3(-450.7136, 6016.371, 31.86523),				
+		textCoords = vector3(-450.15, 6015.96, 31.71),
+		authorizedJobs = { 'police' },
+		locking = false,
+		locked = true,
+		pickable = false,
+		distance = 2.0,
+	},
+	-- Talk Room Entry
+	{
+		objName = 'v_ilev_cd_entrydoor',
+		objYaw = 10.0,
+		objCoords  = vector3(-453.82, 6011.27, 31.72),						
+		textCoords = vector3(-453.82, 6011.27, 31.72),
+		authorizedJobs = { 'police' },
+		locking = false,
+		locked = true,
+		pickable = false,
+		distance = 2.0,
+			
+	-- Hallway (double doors)
+	{
+		textCoords = vector3(-442.09, 6011.93, 31.86523),
+		authorizedJobs = { 'police' },
+		locking = false,
+		locked = true,
+		pickable = false,
+		distance = 2.5,
+		doors = {
+			{
+				objName = 'v_ilev_bk_door2',
+				objYaw = 45.0,
+				objCoords  = vector3(-441.0185, 6012.795, 31.86523),			
+			},
+
+			{
+				objName = 'v_ilev_bk_door2',
+				objYaw = 225.0,
+				objCoords  = vector3(-442.8578, 6010.958, 31.86523)			
+			}
+		}
+	},
+	-- Hallway to the back (double doors)
+	{
+		textCoords = vector3(-448.67, 6007.52, 31.86523),
+		authorizedJobs = { 'police' },
+		locking = false,
+		locked = true,
+		pickable = false,
+		distance = 2.5,
+		doors = {
+			{
+				objName = 'v_ilev_ss_door8',
+				objYaw = -45.0,
+				objCoords = vector3(-447.7283, 6006.702, 31.86523),				
+			},
+
+			{
+				objName = 'v_ilev_ss_door7',
+				objYaw = -225.0,
+				objCoords = vector3(-449.5656, 6008.538, 31.86523)		
+			}
+		}
+	},
 }
