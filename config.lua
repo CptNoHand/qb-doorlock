@@ -624,28 +624,6 @@ QB.Doors = {
 			}
 		}
 	},
-	-- Hallway to the back (double doors)
-	{
-		textCoords = vector3(-448.67, 6007.52, 31.86523),
-		authorizedJobs = { 'police' },
-		locking = false,
-		locked = true,
-		pickable = false,
-		distance = 2.5,
-		doors = {
-			{
-				objName = 'v_ilev_rc_door2',
-				objYaw = 135.0,
-				objCoords = vector3(-448.25, 6007.29, 31.72),
-			},
-
-			{
-				objName = 'v_ilev_rc_door2',
-				objYaw = -45.0,
-				objCoords = vector3(-449.12, 6008.11, 31.72),
-			}
-		}
-	},
 	--outside doors
 	{
 		objName = 'prop_fnclink_03gate5',
