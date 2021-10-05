@@ -566,60 +566,12 @@ QB.Doors = {
 		pickable = false,
 		distance = 2.0,
 	},
-	-- Back door right
-	{
-		objName = 'v_ilev_rc_door2',
-		objYaw = -45.0,
-		objCoords  = vector3(-447.2363, 6002.317, 31.84003),
-		textCoords = vector3(-446.77, 6001.84, 31.68),
-		authorizedJobs = { 'police' },
-		locking = false,
-		locked = true,
-		pickable = false,
-		distance = 2.0,
-	},
 	-- Locker room
 	{
 		objName = 'v_ilev_rc_door2',
 		objYaw = -45.0,
 		objCoords  = vector3(-450.7136, 6016.371, 31.86523),
 		textCoords = vector3(-450.15, 6015.96, 31.71),
-		authorizedJobs = { 'police' },
-		locking = false,
-		locked = true,
-		pickable = false,
-		distance = 2.0,
-	},
-	-- Locker room 2
-	{
-		objName = 'v_ilev_rc_door2',
-		objYaw = 45.0,
-		objCoords  = vector3(-454.0435, 6010.243, 31.86106),
-		textCoords = vector3(-453.56, 6010.73, 31.71),
-		authorizedJobs = { 'police' },
-		locking = false,
-		locked = true,
-		pickable = false,
-		distance = 2.0,
-	},
-	-- Armory
-	{
-		objName = 'v_ilev_arm_secdoor',
-		objYaw = -135.0,
-		objCoords  = vector3(-439.1576, 5998.157, 31.86815),
-		textCoords = vector3(-438.64, 5998.51, 31.71),
-		authorizedJobs = { 'police' },
-		locking = false,
-		locked = true,
-		pickable = false,
-		distance = 2.0,
-	},
-	-- Interrogation room
-	{
-		objName = 'v_ilev_arm_secdoor',
-		objYaw = 45.0,
-		objCoords  = vector3(-436.6276, 6002.548, 28.14062),
-		textCoords = vector3(-437.09, 6002.100, 27.98),
 		authorizedJobs = { 'police' },
 		locking = false,
 		locked = true,
@@ -680,7 +632,7 @@ QB.Doors = {
 			{
 				objName = 'v_ilev_rc_door2',
 				objYaw = 45.0,
-				objCoords  = vector3(-442.8578, 6010.958, 31.86523)
+				objCoords  = vector3(-442.8578, 6010.958, 31.86523),
 			}
 		}
 	},
@@ -696,13 +648,13 @@ QB.Doors = {
 			{
 				objName = 'v_ilev_rc_door2',
 				objYaw = 135.0,
-				objCoords = vector3(-447.7283, 6006.702, 31.86523),
+				objCoords = vector3(-448.25, 6007.29, 31.72),
 			},
 
 			{
 				objName = 'v_ilev_rc_door2',
 				objYaw = -45.0,
-				objCoords = vector3(-449.5656, 6008.538, 31.86523)
+				objCoords = vector3(-449.12, 6008.11, 31.72),
 			}
 		}
 	},
@@ -1470,11 +1422,11 @@ QB.Doors = {
 		locked = true,
 		pickable = false,
 		distance = 2.0,
-
+	},
 	-- Hallway (double doors)
 	{
 		textCoords = vector3(-442.09, 6011.93, 31.86523),
-		authorizedJobs = { 'police' },
+     	authorizedJobs = { 'police' },
 		locking = false,
 		locked = true,
 		pickable = false,
@@ -1485,13 +1437,13 @@ QB.Doors = {
 				objYaw = 45.0,
 				objCoords  = vector3(-441.0185, 6012.795, 31.86523),
 			},
-
+    
 			{
 				objName = 'v_ilev_bk_door2',
 				objYaw = 225.0,
 				objCoords  = vector3(-442.8578, 6010.958, 31.86523)
 			}
-		}
+    	}
 	},
 	-- Hallway to the back (double doors)
 	{
