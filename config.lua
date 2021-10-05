@@ -566,18 +566,6 @@ QB.Doors = {
 		pickable = false,
 		distance = 2.0,
 	},
-	-- Locker room
-	{
-		objName = 'v_ilev_rc_door2',
-		objYaw = -45.0,
-		objCoords  = vector3(-450.7136, 6016.371, 31.86523),
-		textCoords = vector3(-450.15, 6015.96, 31.71),
-		authorizedJobs = { 'police' },
-		locking = false,
-		locked = true,
-		pickable = false,
-		distance = 2.0,
-	},
 	-- Entrance cells 1
 	{
 		objName = 'v_ilev_ph_cellgate1',
