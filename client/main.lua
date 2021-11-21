@@ -31,7 +31,11 @@ RegisterNetEvent('qb-doorlock:client:setState', function(doorID, state)
 	else
 		local doorHash = type(current.objName) == 'number' and current.objName or GetHashKey(current.objName)
 		if not current.object or not DoesEntityExist(current.object) then
-			current.object = GetClosestObjectOfType(current.objCoords, 1.0, doorHash, false, false, false)
+			if doorHash == 741314661 then -- TEMPORARY FIX FOR `prop_gate_prison_01`
+				current.object = GetClosestObjectOfType(current.objCoords, 5.0, doorHash, false, false, false)
+			else
+				current.object = GetClosestObjectOfType(current.objCoords, 1.0, doorHash, false, false, false)
+			end
 		end
 		FreezeEntityPosition(current.object, current.locked)
 
@@ -117,7 +121,7 @@ end
 function loadAnimDict(dict)
     while (not HasAnimDictLoaded(dict)) do
         RequestAnimDict(dict)
-        Citizen.Wait(5)
+        Wait(5)
     end
 end
 
@@ -243,7 +247,7 @@ CreateThread(function()
 
 		if awayFromDoors then
 			doorFound = false
-			Citizen.Wait(1000)
+			Wait(1000)
 		end
 	end
 end)
