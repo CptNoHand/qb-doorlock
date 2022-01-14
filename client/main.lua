@@ -4,6 +4,7 @@ local maxDistance = 1.25
 local PlayerGang = {}
 local PlayerJob = {}
 local doorFound = false
+
 -- Events
 
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
@@ -119,16 +120,26 @@ function setDoorLocking(doorId, key)
 end
 
 function loadAnimDict(dict)
-    while (not HasAnimDictLoaded(dict)) do
-        RequestAnimDict(dict)
-        Wait(5)
+	RequestAnimDict(dict)
+    while not HasAnimDictLoaded(dict) do
+        Wait(0)
     end
 end
 
 function IsAuthorized(doorID)
-	for _,job in pairs(doorID.authorizedJobs) do
-		if job == PlayerJob.name or job == PlayerGang.name then
-			return true
+	if doorID.authorizedJobs then
+		for _, job in pairs(doorID.authorizedJobs) do
+			if job == PlayerJob.name then
+				return true
+			end
+		end
+	end
+
+	if doorID.authorizedGangs then
+		for _, gang in pairs(doorID.authorizedGangs) do
+			if gang == PlayerGang.name then
+				return true
+			end
 		end
 	end
 
@@ -137,7 +148,7 @@ end
 
 function openDoorAnim()
     loadAnimDict("anim@heists@keycard@")
-    TaskPlayAnim( PlayerPedId(), "anim@heists@keycard@", "exit", 5.0, 1.0, -1, 16, 0, 0, 0, 0 )
+    TaskPlayAnim(PlayerPedId(), "anim@heists@keycard@", "exit", 5.0, 1.0, -1, 16, 0, 0, 0, 0)
 	SetTimeout(400, function()
 		ClearPedTasks(PlayerPedId())
 	end)
@@ -152,9 +163,7 @@ end
 
 CreateThread(function()
 	while true do
-		Wait(0)
 		local playerCoords, awayFromDoors = GetEntityCoords(PlayerPedId()), true
-
 		for i = 1, #QB.Doors do
 			local current = QB.Doors[i]
 			local distance
@@ -208,24 +217,24 @@ CreateThread(function()
 
 				if isAuthorized then
 					if current.locked then
-						displayText = "[~g~E~w~] - Locked"
+						displayText = Lang:t("general.locked_button")
 					elseif not current.locked then
-						displayText = "[~g~E~w~] - Unlocked"
+						displayText = Lang:t("general.unlocked_button")
 
 					end
 				elseif not isAuthorized then
 					if current.locked then
-						displayText = "~r~Locked"
+						displayText = Lang:t("general.locked")
 					elseif not current.locked then
-						displayText = "~g~Unlocked"
+						displayText = Lang:t("general.unlocked")
 					end
 				end
 
 				if current.locking then
 					if current.locked then
-						displayText = "~g~Unlocking.."
+						displayText = Lang:t("general.unlocking")
 					else
-						displayText = "~r~Locking.."
+						displayText = Lang:t("general.locking")
 					end
 				end
 
@@ -239,7 +248,7 @@ CreateThread(function()
 					if isAuthorized then
 						setDoorLocking(current, i)
 					else
-						QBCore.Functions.Notify('Not Authorized', 'error')
+						QBCore.Functions.Notify(Lang:t("error.not_authorized"), 'error')
 					end
 				end
 			end
@@ -249,5 +258,6 @@ CreateThread(function()
 			doorFound = false
 			Wait(1000)
 		end
+		Wait(0)
 	end
 end)
