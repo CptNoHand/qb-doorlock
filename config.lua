@@ -16,83 +16,94 @@ Config.UnlockedColor = 'rgb(27 195 63)' -- The color of the box of the popup tex
 Config.Consumables = { ['ticket'] = 1, ['paperclip'] = 1 } -- The items will get removed once used on a door that has the item on it
 
 Config.DoorList = {
-	--- door1 for pacific opened with security card B
+	-- door pacific first door card b
 	{
-		objName = 'hei_v_ilev_bk_gate2_pris',
-		objCoords  = vec3(261.83, 221.39, 106.41),
-		textCoords = vec3(261.83, 221.39, 106.41),
-		authorizedJobs = { 'police' },
-		objYaw = -110.0,
-		locked = true,
-		pickable = false,
-		distance = 1.5,
-	},
-	--door2 for pacific opened with thermite right near the vault door
-	{
-		objName = 'hei_v_ilev_bk_safegate_pris',
-		objCoords  = vec3(252.98, 220.65, 101.8),
-		textCoords = vec3(252.98, 220.65, 101.8),
-		authorizedJobs = { 'police' },
-		objYaw = 160.0,
-		locked = true,
-		pickable = false,
-		distance = 1.5
-	},
-	-- door3 for pacific opened with thermite after passing the door near vault
-	{
-		objName = 'hei_v_ilev_bk_safegate_pris',
-		objCoords  = vec3(261.68, 215.62, 101.81),
-		textCoords = vec3(261.68, 215.62, 101.81),
-		authorizedJobs = { 'police' },
-		objYaw = -110.0,
-		locked = true,
-		pickable = false,
-		distance = 1.5
-	},
-	-- Paleto Door 1 opened with security card A
-	{
-		objName = 'v_ilev_cbankvaulgate01',
-		objCoords  = vec3(-105.77, 6472.59, 31.81),
-		textCoords = vec3(-105.77, 6472.59, 31.81),
-		objYaw = 45.0,
-		authorizedJobs = { 'police' },
-		locked = true,
-		pickable = false,
-		distance = 1.5
-	},
-	-- Paleto Door 2 opened with thermite
-	{
-		objName = 'v_ilev_cbankvaulgate02',
-		objCoords  = vec3(-106.26, 6476.01, 31.98),
-		textCoords = vec3(-105.5, 6475.08, 31.99),
-		objYaw = -45.0,
-		authorizedJobs = { 'police' },
-		locked = true,
-		pickable = false,
-		distance = 1.5
-	},
-	-- First Pacific Door opened with lockpick
-	{
-		objName = 'hei_v_ilev_bk_gate_pris',
-		objCoords  = vec3(257.41, 220.25, 106.4),
-		textCoords = vec3(257.41, 220.25, 106.4),
-		authorizedJobs = { 'police' },
-		objYaw = -20.0,
-		locked = true,
-		pickable = true,
-		distance = 1.5
-	},
-	-- Second Pacific Door opened with lockpick
-	{
-		objName = 'v_ilev_bk_door',
-		objCoords  = vec3(265.19, 217.84, 110.28),
-		textCoords = vec3(265.19, 217.84, 110.28),
-		authorizedJobs = { 'police' },
-		objYaw = -20.0,
-		locked = true,
-		pickable = true,
-		distance = 1.5
-	},
+	    objName = 409280169,
+	    objCoords  = vec3(272.642151, 219.898712, 97.317978),
+	    textCoords = vec3(272.642151, 219.898712, 97.317978),
+	    authorizedJobs = { 'police' },
+	    objYaw = 340.00024414062,
+	    locked = true,
+	    pickable = false,
+	    distance = 1.5,
+    },
+    --door2 for pacific opened with thermite front near the card b door    [door id 2]
+    {
+	    objName = 409280169,                                           
+	    objCoords  = vec3(270.103210, 212.922928, 97.317978),         
+	    textCoords = vec3(270.103210, 212.922928, 97.317978),
+	    authorizedJobs = { 'police' },
+	    objYaw = 340.00024414062,
+	    locked = true,
+	    pickable = false,
+	    distance = 1.5,
+    },
+    --door3 for pacific opened with thermite right near the vault door         [door id 3]
+    {
+	    objName = 409280169,
+	    objCoords  = vec3(250.564209, 233.399384, 97.317978),       
+	    textCoords = vec3(250.564209, 233.399384, 97.317978),
+	    authorizedJobs = { 'police' },
+	    objYaw = 340.00024414062,
+	    locked = true,
+	    pickable = false,
+	    distance = 1.5
+    },
+    -- door4 for pacific opened with thermite after passing the door near vault    [door id 4]
+    {
+	    objName = 409280169,
+	    objCoords  = vec3(244.558014, 216.897278, 97.317978),
+	    textCoords = vec3(244.558014, 216.897278, 97.317978),
+	    authorizedJobs = { 'police' },
+	    objYaw = 340.00024414062,
+	    locked = true,
+	    pickable = false,
+	    distance = 1.5
+    },
+    -- Paleto Door 1 opened with security card A
+    {
+	    objName = -2050208642,
+	    objCoords = vec3(-100.241867, 6464.549316, 31.884604),
+	    textCoords = vec3(-100.241867, 6464.549316, 31.884604),
+	    objYaw = 225.00010681152,
+	    authorizedJobs = { 'police' },
+	    locked = true,
+	    pickable = false,
+	    distance = 1.5
+    },
+    -- Paleto Door 2 opened with thermite
+    {
+	    objName = 'v_ilev_cbankvaulgate02',
+	    objCoords  = vec3(-106.26, 6476.01, 31.98),
+	    textCoords = vec3(-105.5, 6475.08, 31.99),
+	    objYaw = -45.0,
+	    authorizedJobs = { 'police' },
+	    locked = true,
+	    pickable = false,
+	    distance = 1.5
+    },
+    -- First Pacific Door opened with lockpick
+    {
+	    objName = 643152522,
+	    objCoords  = vec3(225.646286, 228.886780, 97.323975),
+	    textCoords = vec3(225.646286, 228.886780, 97.323975),
+	    authorizedJobs = { 'police' },
+	    objYaw = 160.00025939941,
+	    locked = true,
+	    pickable = true,
+	    distance = 1.5
+    },
+    -- Second Pacific Door opened with lockpick
+    {
+	    objName = 643152522,
+	    objCoords  = vec3(229.890533, 227.342010, 97.323975),
+	    textCoords = vec3(229.890533, 227.342010, 97.323975),
+	    authorizedJobs = { 'police' },
+	    objYaw = 340.00024414062,
+	    locked = true,
+	    pickable = true,
+	    distance = 1.5
+    },
 	-- Fleeca Door opened with lockpick
 	{
 		objName = 'v_ilev_gb_vaubar',
@@ -173,8 +184,8 @@ Config.DoorList = {
 		pickable = false,
 		distance = 10
 	},
-	------------------------------------------Always add new doors below this line for your bank robberies to work!!!---------------------------------
-				------------------------------------------End Fixed Doors!!!---------------------------------
+    ------------------------------------------Always add new doors below this line for your bank robberies to work!!!---------------------------------
+     ------------------------------------------End Fixed Doors!!!---------------------------------
 }
 
 -- UNNAMED DOOR CREATED BY Cpt NoHand
@@ -6624,4 +6635,148 @@ Config.DoorList['CatCafe Toilet 2'] = {
     --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
     --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
     --autoLock = 1000
+}
+
+-- LSC Chef created by Cpt NoHand
+Config.DoorList['LSC Chef'] = {
+    distance = 2.0,
+    doors = {
+        {objName = 1142444161, objYaw = 263.88201904297, objCoords = vec3(-334.612610, -154.365860, 43.597271)},
+        {objName = 1142444161, objYaw = 83.019134521484, objCoords = vec3(-334.879028, -156.700760, 43.598785)}
+    },
+    pickable = false,
+    locked = true,
+    authorizedJobs = { ['lscustoms'] = 0 },
+    audioRemote = false,
+    doorRate = 1.0,
+    doorType = 'double',
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+}
+
+-- LSC Staff created by Cpt NoHand
+Config.DoorList['LSC Staff'] = {
+    distance = 2.0,
+    objName = 1142444161,
+    locked = true,
+    fixText = false,
+    doorType = 'door',
+    pickable = false,
+    doorRate = 1.0,
+    authorizedJobs = { ['lscustoms'] = 0 },
+    objYaw = 95.0,
+    objCoords = vec3(-334.988281, -162.282761, 43.595940),
+    audioRemote = false,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+}
+
+-- Stash Room created by Cpt NoHand
+Config.DoorList['Stash Room'] = {
+    distance = 3.0,
+    objName = 1157738230,
+    locked = true,
+    fixText = false,
+    doorType = 'sliding',
+    pickable = false,
+    doorRate = 1.0,
+    authorizedJobs = { ['lscustoms'] = 0 },
+    objYaw = 119.57181549072,
+    objCoords = vec3(-341.775543, -166.532257, 38.011387),
+    audioRemote = false,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+}
+
+-- LSC Garage Room created by Cpt NoHand
+Config.DoorList['LSC Garage Room'] = {
+    distance = 5.0,
+    objName = 260701421,
+    locked = true,
+    fixText = false,
+    doorType = 'garage',
+    pickable = false,
+    doorRate = 1.0,
+    authorizedJobs = { ['lscustoms'] = 0 },
+    objYaw = 30.024765014648,
+    objCoords = vec3(-360.216797, -154.936584, 37.726303),
+    audioRemote = false,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+}
+
+-- LSC Garage 1 created by Cpt NoHand
+Config.DoorList['LSC Garage 1'] = {
+    distance = 6.0,
+    objName = 1542392972,
+    locked = true,
+    fixText = false,
+    doorType = 'garage',
+    pickable = false,
+    doorRate = 1.0,
+    authorizedJobs = { ['lscustoms'] = 0 },
+    objYaw = 70.006195068359,
+    objCoords = vec3(-356.136993, -134.796036, 38.012852),
+    audioRemote = false,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+}
+
+-- LSC Garage 2 created by Cpt NoHand
+Config.DoorList['LSC Garage 2'] = {
+    distance = 6.0,
+    objName = 1542392972,
+    locked = true,
+    fixText = false,
+    doorType = 'garage',
+    pickable = false,
+    doorRate = 1.0,
+    authorizedJobs = { ['lscustoms'] = 0 },
+    objYaw = 69.999992370605,
+    objCoords = vec3(-349.795410, -117.295334, 38.023476),
+    audioRemote = false,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+}
+
+-- Garage 3 created by Cpt NoHand
+Config.DoorList['Garage 3'] = {
+    distance = 3.0,
+    objName = 260701421,
+    locked = true,
+    fixText = false,
+    doorType = 'garage',
+    pickable = false,
+    doorRate = 1.0,
+    authorizedJobs = { ['lscustoms'] = 0 },
+    objYaw = 340.00003051758,
+    objCoords = vec3(-364.969971, -102.129547, 38.006550),
+    audioRemote = false,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
+}
+
+-- LSC Garage 5 created by Cpt NoHand
+Config.DoorList['LSC Garage 5'] = {
+    distance = 3.0,
+    objName = 260701421,
+    locked = true,
+    fixText = false,
+    doorType = 'garage',
+    pickable = false,
+    doorRate = 1.0,
+    authorizedJobs = { ['lscustoms'] = 0 },
+    objYaw = 340.0498046875,
+    objCoords = vec3(-371.953125, -99.587898, 38.012356),
+    audioRemote = false,
+    --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+    --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+    --autoLock = 1000,
 }
