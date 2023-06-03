@@ -5,6 +5,7 @@ Config.DoorList['CardealerGarageDoorExample'] = {
     textCoords = vec3(-21.04025, -1410.734, 30.51094),
     authorizedJobs = { ['cardealer'] = 0 },
     locked = true,
+    items = { ['police_stormram'] = 1 },
     pickable = false,
     distance = 15.0
 }
