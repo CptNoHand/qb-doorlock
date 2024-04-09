@@ -2973,7 +2973,7 @@ Config.DoorList['RR Green Room'] = {
     --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
     --
 }
-
+--[[
 -- Basti Apartment Garage created by Cpt NoHand
 Config.DoorList['Basti Apartment Garage'] = {
 	objCoords = vector3(-308.6505, -716.1362, 28.339),
@@ -3011,7 +3011,7 @@ Config.DoorList['Basti Apartment Garage Fahrstuhl'] = {
     --audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
     --audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
     --
-}
+}--]]
 
  -- Basti Apartment  Fahrstuhl oben created by Cpt NoHand
  --Config.DoorList['Basti Apartment  Fahrstuhl oben'] = {
