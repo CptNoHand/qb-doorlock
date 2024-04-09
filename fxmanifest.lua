@@ -1,7 +1,8 @@
 fx_version 'cerulean'
 game 'gta5'
-
-description 'Doorlock system for the QBCore Framework'
+lua54 'yes'
+author 'Kakarot'
+description 'Door management system allowing players to lock and unlock doors'
 version '2.0.0'
 
 ui_page 'html/index.html'
@@ -10,17 +11,16 @@ shared_scripts {
     'config.lua',
     'configs/*.lua',
     '@qb-core/shared/locale.lua',
-    'locales/de.lua' -- Change this to your preferred language
+    'locales/de.lua',
+    'locales/*.lua'
 }
 
 server_script 'server/main.lua'
 client_script 'client/main.lua'
 
 files {
-	'html/*.html',
-	'html/*.js',
-	'html/*.css',
-	'html/sounds/*.ogg',
+    'html/*.html',
+    'html/*.js',
+    'html/*.css',
+    'html/sounds/*.ogg',
 }
-
-lua54 'yes'
